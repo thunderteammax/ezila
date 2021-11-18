@@ -27,7 +27,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 **Hello {}, I am {}!** 
-I am an **ADVANCE**  roup management bot.
+I am an **ADVANCE**  group management bot.
 You can find the list of available commands with /help.
 powered by :- Thunder Team
 
@@ -140,13 +140,11 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="❔ Help ❔",
-                                                                       callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Channel",
-                                                                       url="https://t.me/slhitbotofficial")],
-                                                                                   [InlineKeyboardButton(text="➕ Add To Me Your Group ➕",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text=" ➕ Add me to Your Group ➕ ",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Our Bots",
+                                                                                   [InlineKeyboardButton(text=" Help & Commands",
+                                                                       callback_data="help_back".format(bot.username)),
+                                                                                   InlineKeyboardButton(text="Support",
                                                                        url="https://t.me/slhitbotofficial/37")
                                                                                  ]]))
 
