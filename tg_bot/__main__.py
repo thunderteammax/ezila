@@ -26,15 +26,16 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-**Hello {}, My Name is Thunder GoHelp
+**Hello {}, My Name is {}!** 
 I am an **ADVANCE**  group management bot.
 You can find the list of available commands with /help.
+Produced By :- Thunder Team
 
 """
 
 HELP_STRINGS = """
 
-Hello! my name *Thunder GoHelp.
+Hello! my name *{}*.
 
 *Main* commands available:
  - /start: start the bot
@@ -49,7 +50,7 @@ Hello! my name *Thunder GoHelp.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/166d6f00c76d77154e994.jpg"
+TECHNO_IMG = "https://telegra.ph/file/7bb512fd4c29eb943a13a.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -139,18 +140,16 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text=" 𝕳𝖊𝖑𝖕 & 𝕮𝖔𝖒𝖒𝖆𝖓𝖉𝖘 ",
-                                                                       callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Developer",
-                                                                       url="Https://t.me/thunderteammax")],
-                                                                                   [InlineKeyboardButton(text="➕ Add To Me Your Group ➕",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text=" ➕ Add me To Your Group ➕ ",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Support",
-                                                                       url="https://t.me/thundergotechnologysupport")
+                                                                                   [InlineKeyboardButton(text=" Support",
+                                                                       url="https://t.me/thundergotechnologysupport".format(bot.username)),
+                                                                                   InlineKeyboardButton(text=" 𝕳𝖊𝖑𝖕 & 𝕮𝖔𝖒𝖒𝖆𝖓𝖉𝖘 ",
+                                                                       callback_data="help_back")
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("Hey, I am now Online")
+        update.effective_message.reply_text("hi, I am now Online")
 
 
 def send_start(bot, update):
