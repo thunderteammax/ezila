@@ -27,7 +27,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 **Hello {}, I am {}!** 
-I am an **ADVANCE**  group management bot.
+I am an **ADVANCE**  roup management bot.
 You can find the list of available commands with /help.
 powered by :- Thunder Team
 
