@@ -211,7 +211,7 @@ def punch(bot: Bot, update: Update, args: List[str]) -> str:
         return log
 
     else:
-        message.reply_text("Well damn, I can't punch that user.")
+        message.reply_text("I can't punch that user.")
 
     return log_message
 
