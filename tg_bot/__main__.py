@@ -30,7 +30,7 @@ PM_START_TEXT = """
 I am an **Advance**  group management bot I have more cool modules and features
 So Add me to Your Super Group as an admin
 You can find the list of available commands with /help.
-BOT Version :- 2.0
+BOT Version :- V2.0
 Status :- Working
 
 """
