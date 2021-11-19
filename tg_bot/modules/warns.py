@@ -82,7 +82,7 @@ def warn(user: User, chat: Chat, reason: str, message: Message, warner: User = N
                       f"<b>Counts:</b> <code>{num_warns}/{limit}</code>")
 
     else:
-        keyboard = InlineKeyboardMarkup([{InlineKeyboardButton(""🔘 Remove warn",
+        keyboard = InlineKeyboardMarkup([{InlineKeyboardButton("🔘 Remove warn",
                                                                callback_data="rm_warn({})".format(user.id))}])
 
         reply = (
