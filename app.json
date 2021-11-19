@@ -16,7 +16,7 @@
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
-         "value": "CAACAgIAAxkBAAEDUcFhl42fhvAbQeAJzzMy7VZB9z61YwACqQ8AAl9isUj9xfbVfmnzaCIE"
+         "value": ""
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
@@ -33,39 +33,39 @@
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
-         "value": "2119454940"
+         "value": "1391755824"
       },
       "OWNER_NAME": {
          "description": "Your username",
-         "value": "thunderteammax"
+         "value": "Damantha_Jasinghe"
       },
       "DEV_USERS": {
          "description": "ID of users who are Dev (can use /py etc.)",
          "required": false,
-         "value": "2119454940"
+         "value": "1391755824 1548967589 1725052009 1758509403 1848277863"
       },
 "GRAND_IMG": {
          "description": "Telegraph files only:-@TheTelegraphUpBot. Image shows when hit /start",
-         "value": "https://telegra.ph/file/1172ed1eeabc400a8dee3.jpg"    
+         "value": "https://telegra.ph/file/066343aa558e9348abadb.jpg"    
       },
       "GBAN_LOGS": {
-         "description": "Gban log channel, include the hyphen too: Use -123456 To Keep it Public We Recommend",
-         "value": "-123456"
+         "description": "Gban log channel, include the hyphen too: ex: -123456",
+         "value": "-123"
       },
       "CASH_API_KEY": {
-         "description": "Required for currency converter. You can get it from https://www.alphavantage.co/support/#api-key",
+         "description": "Required for currency converter",
          "value": "-xyz"
       },
       "TIME_API_KEY": {
-         "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
+         "description": "Required for timezone information",
          "value": "HW6LQCYX43HS"
       },
       "AI_API_KEY": {
-         "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
+         "description": "for activate chatbot",
          "value": "x_y_z"
       },
       "API_OPENWEATHER": {
-         "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
+         "description": "Required for weather information",
          "value": "5c5adc2bc1832de6943e3f4467e84c39"
       },
       "PORT": {
@@ -80,15 +80,15 @@
       "SUDO_USERS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "2105577236"
+         "value": "1391755824 1548967589 1725052009 1758509403 1848277863"
       },
       "TIGER_USERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": "2105577236"
+         "value": "1391755824 1548967589 1725052009 1758509403 1848277863"
       },
       "TOKEN": {
-         "description": "Your bot token. Get one from @BotFather dude",
+         "description": "Your bot token.",
          "required": true,
          "value": ""
       },
@@ -105,7 +105,7 @@
       "WHITELIST_USERS": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "2105577236 2119454940"
+         "value": "1391755824 1548967589 1725052009 1758509403 1848277863"
       }
    },
    "keywords": [
@@ -114,7 +114,7 @@
       "manager",
       "bot"
    ],
-   "logo": "https://telegra.ph/file/1172ed1eeabc400a8dee3.jpg",
-   "name": "Thunder GoHelp",
-   "repository": "https://github.com/thunderteammax/ezila"
+   "logo": "https://telegra.ph/file/066343aa558e9348abadb.jpg",
+   "name": "Hector bot",
+   "repository": "https://github.com/slbotofficial11/Hector"
 }
