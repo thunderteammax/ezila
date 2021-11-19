@@ -30,7 +30,7 @@ def ban(bot: Bot, update: Update, args: List[str]) -> str:
     user_id, reason = extract_user_and_text(message, args)
 
     if not user_id:
-        message.reply_text("I doubt that's a user.")
+        message.reply_text("Reply to His message or Use his user id")
         return log_message
 
     try:
@@ -43,12 +43,12 @@ def ban(bot: Bot, update: Update, args: List[str]) -> str:
             raise
 
     if user_id == bot.id:
-        message.reply_text("Oh yeah, ban myself, noob!")
+        message.reply_text("I can't Band MySelf")
         return log_message
 
     # dev users to bypass whitelist protection incase of abuse
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
-        message.reply_text("This user has immunity - I can't ban them.")
+        message.reply_text("This user has a GoPass Id - I can't ban them.")
         return log_message
 
     log = (f"<b>{html.escape(chat.title)}:</b>\n"
@@ -94,7 +94,7 @@ def temp_ban(bot: Bot, update: Update, args: List[str]) -> str:
     user_id, reason = extract_user_and_text(message, args)
 
     if not user_id:
-        message.reply_text("I doubt that's a user.")
+        message.reply_text("Reply to His message or Use his user id")
         return log_message
 
     try:
@@ -107,7 +107,7 @@ def temp_ban(bot: Bot, update: Update, args: List[str]) -> str:
             raise
 
     if user_id == bot.id:
-        message.reply_text("I'm not gonna BAN myself, are you crazy?")
+        message.reply_text("I'm not gonna BAN myself")
         return log_message
 
     if is_user_ban_protected(chat, user_id, member):
@@ -176,7 +176,7 @@ def punch(bot: Bot, update: Update, args: List[str]) -> str:
     user_id, reason = extract_user_and_text(message, args)
 
     if not user_id:
-        message.reply_text("I doubt that's a user.")
+        message.reply_text("Reply to His message or Use his user id.")
         return log_message
 
     try:
@@ -247,7 +247,7 @@ def unban(bot: Bot, update: Update, args: List[str]) -> str:
     user_id, reason = extract_user_and_text(message, args)
 
     if not user_id:
-        message.reply_text("I doubt that's a user.")
+        message.reply_text("Reply to His message or Use his user id.")
         return log_message
 
     try:
@@ -347,5 +347,5 @@ dispatcher.add_handler(UNBAN_HANDLER)
 dispatcher.add_handler(ROAR_HANDLER)
 dispatcher.add_handler(PUNCHME_HANDLER)
 
-__mod_name__ = "BAN 🚫"
+__mod_name__ = "BAN"
 __handlers__ = [BAN_HANDLER, TEMPBAN_HANDLER, PUNCH_HANDLER, UNBAN_HANDLER, ROAR_HANDLER, PUNCHME_HANDLER]
