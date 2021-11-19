@@ -27,9 +27,11 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 **Hello {}, My Name is Thunder GoHelp!** 
-I am an **ADVANCE**  group management bot.
+I am an **Advance**  group management bot I have more cool modules and features
+So Add me to Your Super Group as an admin
 You can find the list of available commands with /help.
-powered by :- Thunder Team
+BOT Version :- 2.0
+Status :- Working
 
 """
 
@@ -146,8 +148,8 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                        url="https://t.me/thundergotechnologysupport")],
                                                                                    [InlineKeyboardButton(text="➕ 𝐀𝐝𝐝 𝐌𝐞 𝐭𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫",
-                                                                       url="Https://t.me/thunderteammax")
+                                                                                   InlineKeyboardButton(text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥",
+                                                                       url="https://t.me/thundergohelpupdates")
                                                                                  ]]))
 
     else:
