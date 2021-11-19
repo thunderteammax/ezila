@@ -26,7 +26,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-**Hello {}, My Name is {}!** 
+**Hello {}, My Name is Thunder GoHelp!** 
 I am an **ADVANCE**  group management bot.
 You can find the list of available commands with /help.
 powered by :- Thunder Team
@@ -35,7 +35,7 @@ powered by :- Thunder Team
 
 HELP_STRINGS = """
 
-Hello! my name *{}*.
+Hello! my name *Thunder GoHelp*.
 
 *Main* commands available:
  - /start: start the bot
