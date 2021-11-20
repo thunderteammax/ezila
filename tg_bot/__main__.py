@@ -52,7 +52,7 @@ Hello! my name *Thunder GoHelp*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-THUNDERGOHELP_IMG = "https://telegra.ph/file/1172ed1eeabc400a8dee3.jpg"
+TECHNO_IMG = "https://telegra.ph/file/1172ed1eeabc400a8dee3.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
